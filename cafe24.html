@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+<!--@css(/layout/basic/css/ec-base-product.css)-->
+<!--@css(/layout/basic/css/ec-base-paginate.css)-->
+<!--@css(/layout/basic/css/ec-base-ui.css)-->
+<!--@css(/layout/basic/css/ec-base-help.css)-->
+<!--@css(/layout/basic/css/ec-base-button.css)-->
+<!--@css(/layout/basic/css/ec-base-box.css)-->
+<!--@css(/layout/basic/css/ec-base-layer.css)-->
+<!--@css(/layout/basic/css/ec-base-table.css)-->
+<!--@css(/layout/basic/css/ec-base-fold.css)-->
+<!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+<!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+
+<!--@css(/gridsystem/resource/css/vendor.css)-->
+<!--@css(/gridsystem/resource/css/common.css)-->
+<!--@css(/gridsystem/resource/css/layout.css)-->
+<!--@css(/gridsystem/resource/css/font/font.css)-->
+
+<!-- The code in includes "JQuery 1.4.4". Be careful to add another version of jQuery. -->
+<!--@js(/gridsystem/resource/js/jquery.plugin.js)-->
+<!--@js(/gridsystem/resource/js/common.js)-->
+<!--@css(/index.css)-->
+</head>
+<body id="main" class="dnd">
+    <div id="wrap">
+        <div id="container" class="gridContainer" style="display: grid;grid-template-columns: repeat(4,1fr);min-height: 0;min-width: 0;">
+<div class="gridItem" data-component-id="1209" id="grid_id_1579591751571_5" style="grid-area: 1 / 1 / 11 / 5;min-width: 0;">
+    <div class="dnd_module_64d2187309debb18ca0170af58ba4703">
+<!-- MOMA COMPONENT ID 1209 -->
+<span module="editor_dndImage">
+    
+</span>
+<!-- //MOMA COMPONENT ID 1209 -->
+</div>
+</div>
+<div class="gridItem" data-component-id="1210" id="grid_id_1575447038250_4" style="grid-area: 11 / 1 / 20 / 5;min-width: 0;">
+    <div class="dnd_module_46cde75cf119edafe27d67d728c058fa">
+<!-- MOMA COMPONENT ID 1210 -->
+<div module="product_listmain_1" class="productList typeThumb">
+    <!--
+        $count = 6
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $moreview = yes
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <div class="title">
+        <h2>
+            <span style="display: {$category_title_text_display};">{$category_title_text}</span>
+            <span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}" /></span>
+        </h2>
+    </div>
+    <ul class="prdList">
+        <li id="anchorBoxId_{$product_no}">
+            <div class="inner">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}">{$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                    <span class="icon">{$soldout_icon}{$stock_icon}{$recommend_icon}{$new_icon}{$today_arrival_icon}{$pickup_icon}{$product_icons}{$benefit_icons}</span>
+                </div>
+            </div>
+        </li>
+        <li id="anchorBoxId_{$product_no}">
+            <div class="inner">
+                <div class="thumbnail">
+                    <div class="prdImg">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                </div>
+                <div class="description">
+                    <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}">{$product_name}</a></strong>
+                    <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                    <span class="icon">{$soldout_icon}{$stock_icon}{$recommend_icon}{$new_icon}{$today_arrival_icon}{$pickup_icon}{$product_icons}{$benefit_icons}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div module="product_listmore_1" class="productPaginate typeMoreview">
+    <a href="#none" onclick="{$more_action}" class="btnMore">
+        제품 더보기 (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)<span class="icoMore"></span>
+    </a>
+</div>
+<!-- // MOMA COMPONENT ID 1210 -->
+</div>
+</div>
+<div class="gridItem" data-component-id="1146" id="grid_id_1575447018968_3" style="grid-area: 20 / 1 / 25 / 5;min-width: 0;">
+    <div class="dnd_module_04b5ab3f197e1439427ad566204983a2">
+<!-- MOMA COMPONENT ID 1146 -->
+<div module="editor_dndMedia" class="iframe">
+    <!-- 
+   	 	$url=https://www.youtube.com/watch?v=nGpL7-GI8lM
+        $type=YOUTUBE
+	-->
+    <iframe src="https://www.youtube.com/embed/nGpL7-GI8lM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <div class="ec-dnd-iframe-cover"></div> 
+</div>
+<!-- // MOMA COMPONENT ID 1146 -->
+</div>
+</div>
+<div class="gridItem" data-component-id="1211" id="grid_id_1575446993248_1" style="grid-area: 25 / 1 / 29 / 5;min-width: 0;">
+    <div class="dnd_module_bdf597a9eec531dd96676e297121a126">
+<!-- MOMA COMPONENT ID 1211 -->
+<span module="editor_dndImage">
+    <a href="#none" class="Link"><img src="https://moma-img.cafe24img.com/img/1/bdf5/J_공통_서브배너_V03.png" alt=""/></a>
+</span>
+<!-- //MOMA COMPONENT ID 1211 -->
+</div>
+</div>
+<div class="gridItem" data-component-id="1135" id="grid_id_1575447058868_5" style="grid-area: 29 / 1 / 36 / 5;min-width: 0;">
+    <div class="dnd_module_37c7718c6eaa1492714c53e5aaba95c5">
+<!-- MOMA COMPONENT ID 1135 -->
+<footer id="footer">
+    
+</footer>
+<!-- //MOMA COMPONENT ID 1135 -->
+</div>
+    <script>
+             var getParameters = function (paramName) {
+            // 리턴값을 위한 변수 선언
+            var returnValue;
+
+            // 현재 URL 가져오기
+            var url = location.href;
+
+            // get 파라미터 값을 가져올 수 있는 ? 를 기점으로 slice 한 후 split 으로 나눔
+            var parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&');
+
+            // 나누어진 값의 비교를 통해 paramName 으로 요청된 데이터의 값만 return
+            for (var i = 0; i < parameters.length; i++) {
+                var varName = parameters[i].split('=')[0];
+                if (varName.toUpperCase() == paramName.toUpperCase()) {
+                    returnValue = parameters[i].split('=')[1];
+                    return decodeURIComponent(returnValue);
+                }
+            }
+        };
+
+        alert(getParameters('id')+'/'+getParameters('name'));   
+     </script>
+</div>
+        </div>
+    </div>
+<!--@js(/index.js)-->
+<!-- body -->
+<div module="Popup_MultiPopup">
+    <!--
+            $banner_popup_no =
+            ※ Enter ID (number) of Pop-up.
+        -->
+    {$popup}
+</div>
+</body>
+</html>
