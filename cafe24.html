@@ -24,7 +24,35 @@
 <!--@js(/gridsystem/resource/js/common.js)-->
 <!--@css(/index.css)-->
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(afunction(){
+     var getParameters = function (paramName) {
+    // 리턴값을 위한 변수 선언
+    var returnValue;
+
+    // 현재 URL 가져오기
+    var url = location.href;
+
+    // get 파라미터 값을 가져올 수 있는 ? 를 기점으로 slice 한 후 split 으로 나눔
+    var parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&');
+
+    // 나누어진 값의 비교를 통해 paramName 으로 요청된 데이터의 값만 return
+    for (var i = 0; i < parameters.length; i++) {
+        var varName = parameters[i].split('=')[0];
+        if (varName.toUpperCase() == paramName.toUpperCase()) {
+            returnValue = parameters[i].split('=')[1];
+            return decodeURIComponent(returnValue);
+        }
+    }
+};
+    const imgurl111=getParameters(imgurl);
+    alert(imgurl111)https://images.prismic.io/mystique/5d7c09b9-40e5-4254-ae1c-2c1cb59aa898_IMG3.jpg?auto=compress,format
+    $("#jaesikimage").attr('src',imgurl111);
+});
+</script>
 <body id="main" class="dnd">
+    <img src="https://www.smashbros.com/assets_v2/img/fighter/link/main2.png" alt="Flowers in Chania" width="460" height="345">
     <div id="wrap">
         <div id="container" class="gridContainer" style="display: grid;grid-template-columns: repeat(4,1fr);min-height: 0;min-width: 0;">
 <div class="gridItem" data-component-id="1209" id="grid_id_1579591751571_5" style="grid-area: 1 / 1 / 11 / 5;min-width: 0;">
